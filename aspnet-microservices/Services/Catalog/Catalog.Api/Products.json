@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "ASUS LAPTOP",
+    "Category": "COMPUTERS",
+    "Summary": "ASUS SUMMARY",
+    "Description": "ASUS DESCRIPTION",
+    "ImageFile": "ASUS IMAGE FILE",
+    "Price": "100"
+  },
+  {
+    "Name": "LENOVO LAPTOP",
+    "Category": "COMPUTERS",
+    "Summary": "LENOVO SUMMARY",
+    "Description": "LENOVO DESCRIPTION",
+    "ImageFile": "LENOVO IMAGE FILE",
+    "Price": "200"
+  }
+]
