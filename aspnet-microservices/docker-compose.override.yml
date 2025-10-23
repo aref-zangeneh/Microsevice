@@ -121,8 +121,21 @@ services:
       - orderdb
       - rabbitmq1
 
+  ocelotapigw:
+    container_name: ocelotapigw
+    depends_on:
+      - catalog.api
+      - basket.api
+      - discount.api
+      - ordering.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8011:80"
+
 volumes:
   mongo_data:
+
 
 
 
