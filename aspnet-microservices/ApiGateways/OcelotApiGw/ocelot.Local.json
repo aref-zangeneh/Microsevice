@@ -5,6 +5,9 @@
       "UpstreamPathTemplate": "/Product",
       "DownstreamPathTemplate": "/api/v1/Product",
       "DownstreamScheme": "http",
+      "FileCacheOptions": {
+        "TtlSeconds": 40
+      },
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -51,6 +54,13 @@
     {
       "UpstreamHttpMethod": [ "Post" ],
       "UpstreamPathTemplate": "/Basket",
+      "RateLimitOptions": {
+        "ClientWhiteList": [],
+        "EnableRateLimiting": true,
+        "Period": "3s",
+        "PeriodTimespan": 1,
+        "Limit": 1
+      },
       "DownstreamPathTemplate": "/api/v1/Basket",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
